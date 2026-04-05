@@ -1,0 +1,56 @@
+/* Watch Later Button Styles */
+
+.watch-later-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  width: 100%;
+  text-align: left;
+}
+
+.watch-later-btn:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #F81804;
+}
+
+.watch-later-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.watch-later-btn.in-watch-later {
+  color: #F81804;
+  font-weight: 500;
+}
+
+.watch-later-btn.in-watch-later:hover:not(:disabled) {
+  background-color: rgba(248, 24, 4, 0.1);
+}
+
+.watch-later-btn svg {
+  font-size: 16px;
+}
+
+.loading-text {
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .watch-later-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .watch-later-btn svg {
+    font-size: 14px;
+  }
+}

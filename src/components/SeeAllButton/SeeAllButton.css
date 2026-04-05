@@ -1,0 +1,48 @@
+.see-all-button {
+  background: none;
+  border: 1px solid #303030;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.see-all-button:hover,.see-all-button:active {
+  background-color: #F81804 !important;
+  color: #ffffff !important;
+  border-color: #F81804 !important;
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(248, 24, 4, 0.3);
+}
+
+.see-all-button.active {
+  background-color: #F81804 !important;
+  border-color: #F81804 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.see-all-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.see-all-button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Touch-specific state for mobile devices */
+.see-all-button:active,
+.see-all-button:hover:active,
+.see-all-button.pressed {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-color: #303030;
+  transform: scale(0.95);
+}

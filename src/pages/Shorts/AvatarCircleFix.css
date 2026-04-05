@@ -1,0 +1,16 @@
+/* Fix for avatar oval shape issue */
+.sl-avatar .sl-avatar-img,
+.sl-avatar-img {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  display: block !important;
+  border: none !important;
+  aspect-ratio: 1/1 !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  flex-shrink: 0 !important;
+}

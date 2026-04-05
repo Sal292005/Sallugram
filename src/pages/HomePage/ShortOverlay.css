@@ -1,0 +1,44 @@
+/* Short video overlay styles */
+.home-short-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 12px;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.home-short-overlay-content {
+  width: 100%;
+}
+
+.home-short-overlay-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-short-overlay-stats {
+  font-size: 10px;
+  color: #ffffff;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.home-short-overlay-stats span {
+  white-space: nowrap;
+}

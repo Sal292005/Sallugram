@@ -1,0 +1,63 @@
+/* Subscribe Button Styles */
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #F81804;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.subscribe-button:hover:not(:disabled) {
+  background: #d61403;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(248, 24, 4, 0.3);
+}
+
+.subscribe-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.subscribe-button.subscribed {
+  background: #444;
+  color: #ccc;
+}
+
+.subscribe-button.subscribed:hover:not(:disabled) {
+  background: #555;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-button svg {
+  font-size: 16px;
+}
+
+.loading-text {
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .subscribe-button {
+    padding: 8px 16px;
+    font-size: 13px;
+    min-width: 120px;
+  }
+  
+  .subscribe-button svg {
+    font-size: 14px;
+  }
+}
